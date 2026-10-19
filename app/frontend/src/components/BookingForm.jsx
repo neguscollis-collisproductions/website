@@ -13,7 +13,12 @@ const inputCls =
 function formatErr(e) {
   const d = e?.response?.data?.detail;
   if (typeof d === "string") return d;
-  if (Array.isArray(d)) return d.map((x) => x.msg).filter(Boolean).join(" ");
+  if (Array.isArray(d)) return d.map((x) => x.msg || x).filter(Boolean).join(" ");
+  if (d && typeof d === "object") {
+    if (typeof d.message === "string") return d.message;
+    if (typeof d.error === "string") return d.error;
+  }
+  if (e?.message) return e.message;
   return "Something went wrong. Please try again.";
 }
 
