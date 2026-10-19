@@ -25,5 +25,11 @@
     "tailwindcss": "^3.4.16",
     "tailwindcss-animate": "^1.0.7",
     "vite": "^5.4.11"
-  }
+  },
+  "scripts": {
+    "dev": "webpack serve --config webpack.config.dev.js",
+    "start": "webpack serve --open --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.prod.js"   }
 }
+
+
