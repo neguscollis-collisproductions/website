@@ -1,0 +1,250 @@
+{
+  "project_name": "Lumen & Frame Photography",
+  "app_type": "hybrid_fullstack",
+  "art_direction": "Awwwards SOTD-Level Editorial & Cinematic Photography Platform",
+  "theme": "Dark Cinematic Luxury (Obsidian, Parchment, & Champagne Gold)",
+  "typography": {
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap",
+    "font_families": {
+      "display": "'Cormorant Garamond', Georgia, serif",
+      "body": "'Plus Jakarta Sans', system-ui, sans-serif",
+      "mono": "'JetBrains Mono', monospace"
+    },
+    "hierarchy": {
+      "hero_title": "text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight leading-[1.05] font-serif",
+      "h2_section": "text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight font-serif text-zinc-100",
+      "h3_card": "text-xl sm:text-2xl font-medium tracking-normal font-serif text-zinc-100",
+      "eyebrow_mono": "text-xs font-mono uppercase tracking-[0.25em] text-amber-400/90",
+      "body_text": "text-base text-zinc-400 leading-relaxed font-sans",
+      "caption_mono": "text-xs font-mono text-zinc-500 tracking-wider"
+    }
+  },
+  "colors": {
+    "background": "#09090B",
+    "surface": "#121216",
+    "surface_hover": "#1A1A22",
+    "border": "#27272A",
+    "border_subtle": "#1F1F24",
+    "text_primary": "#F4F4F5",
+    "text_secondary": "#A1A1AA",
+    "text_muted": "#71717A",
+    "accent_gold": "#D4A359",
+    "accent_gold_glow": "rgba(212, 163, 89, 0.15)",
+    "accent_amber": "#F59E0B",
+    "status_confirmed": "#10B981",
+    "status_pending": "#F59E0B",
+    "status_cancelled": "#EF4444"
+  },
+  "layout_strategy": {
+    "container_padding": "px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto",
+    "section_spacing": "py-24 sm:py-32 lg:py-40",
+    "bento_grid": "grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8",
+    "swiss_borders": "border-t border-zinc-800/80 pt-8"
+  },
+  "key_features_and_components": {
+    "navbar": {
+      "component": "src/components/Navbar.js",
+      "style": "Fixed z-50 top-0 left-0 right-0 backdrop-blur-xl bg-zinc-950/80 border-b border-zinc-800/60 px-6 lg:px-16 py-4 flex items-center justify-between",
+      "elements": [
+        "Brand Logo 'LUMEN & FRAME' in Cormorant Garamond with camera aperture emblem",
+        "Nav links: Manifesto, Services & Pricing, Gallery, Booking, Admin",
+        "CTA Button: 'Book Session' (Pill button with gold accent outline and hover fill)"
+      ]
+    },
+    "hero_section": {
+      "component": "src/components/Hero.js",
+      "description": "Kinetic hero with line-by-line masked reveal animation, subtle 3D tilt card / depth layer, dramatic camera spotlight hero frame",
+      "tagline": "CAPTURING THE UNSEEN MOMENT",
+      "heading": "Light. Shadow. Authentic Emotion.",
+      "subtext": "Fine art portraiture, high-velocity sports cinematics, and milestone story capturing based in studio and on location worldwide.",
+      "interaction": "Framer motion line-by-line overflow mask reveal on load + Lenis smooth scroll trigger"
+    },
+    "manifesto_chapters": {
+      "component": "src/components/Manifesto.js",
+      "description": "Numbered manifesto chapters with editorial typography, progress indicators, and interactive hovering image cards",
+      "chapters": [
+        {
+          "number": "01",
+          "title": "Vision & Light",
+          "text": "We do not merely take photographs; we translate ambient light into lasting visceral artifacts."
+        },
+        {
+          "number": "02",
+          "title": "Authentic Emotion",
+          "text": "Stripping away forced poses to unearth the raw, unfiltered truth of human connection."
+        },
+        {
+          "number": "03",
+          "title": "Timeless Craft",
+          "text": "Combining high-resolution medium format precision with darkroom-inspired color chemistry."
+        },
+        {
+          "number": "04",
+          "title": "Uncompromising Detail",
+          "text": "From micro-expressions on game day to quiet heirloom family sessions, every frame is curated."
+        }
+      ]
+    },
+    "editorial_marquee": {
+      "component": "src/components/EditorialMarquee.js",
+      "description": "Slow, organic, low-contrast ribbon marquee sliding across background with custom bullet separators",
+      "text": "FAMILY & PORTRAIT SESSIONS — ATHLETE CINEMATICS — MILESTONE & GRADUATION COVERAGE — FINE ART PRINTS — LUMEN & FRAME STUDIO — "
+    },
+    "services_and_pricing": {
+      "component": "src/components/ServicesPricing.js",
+      "description": "3 main categories x 3 packages each with transparent pricing, feature lists, and direct 'Book Package' buttons",
+      "categories": [
+        {
+          "id": "family",
+          "title": "Family & Portrait",
+          "packages": [
+            {
+              "name": "Mini Sessions",
+              "price": "$350",
+              "duration": "30 Mins",
+              "deliverables": "15 Edited High-Res Stills • 1 Location • Online Gallery",
+              "popular": false
+            },
+            {
+              "name": "Full Sessions",
+              "price": "$650",
+              "duration": "90 Mins",
+              "deliverables": "40 Edited High-Res Stills • 2 Locations • Wardrobe Styling Guide",
+              "popular": true
+            },
+            {
+              "name": "Legacy Session",
+              "price": "$1,200",
+              "duration": "Half-Day",
+              "deliverables": "80+ Edited Stills • Full Family Documentary • 10x10 Signature Linen Print Album",
+              "popular": false
+            }
+          ]
+        },
+        {
+          "id": "sports",
+          "title": "Sports & Athletes",
+          "packages": [
+            {
+              "name": "Athlete Portrait",
+              "price": "$450",
+              "duration": "45 Mins Studio",
+              "deliverables": "20 Dramatic Composite Stills • Custom Lighting • High-Key & Darkroom Styles",
+              "popular": false
+            },
+            {
+              "name": "Game Day Coverage",
+              "price": "$850",
+              "duration": "Full Game / Event",
+              "deliverables": "100+ Live Action Shots • Highlights Gallery • Personal Usage License",
+              "popular": true
+            },
+            {
+              "name": "Team Package",
+              "price": "$1,600",
+              "duration": "Full Day Squad",
+              "deliverables": "Roster Action Shots • Team Poster Composite • High-Res Digital Master Drive",
+              "popular": false
+            }
+          ]
+        },
+        {
+          "id": "events",
+          "title": "Grad, Engagement & Events",
+          "packages": [
+            {
+              "name": "Milestone Session",
+              "price": "$500",
+              "duration": "60 Mins",
+              "deliverables": "25 Senior/Grad Edited Stills • 2 Outfit Changes • Print Release",
+              "popular": false
+            },
+            {
+              "name": "Small Event Coverage",
+              "price": "$1,100",
+              "duration": "4 Hours",
+              "deliverables": "Comprehensive Event Story • Live Preview • Digital Downloads & Print Rights",
+              "popular": true
+            },
+            {
+              "name": "All-Day Package",
+              "price": "$2,400",
+              "duration": "Up to 8 Hours",
+              "deliverables": "Full Micro-Wedding/Engagement • 2nd Camera Operator • Fine Art Boxed Prints",
+              "popular": false
+            }
+          ]
+        }
+      ]
+    },
+    "showcase_gallery": {
+      "component": "src/components/ShowcaseGallery.js",
+      "description": "Masonry/Bento showcase grid with interactive filter tabs (All, Family & Portrait, Sports & Athletes, Grad & Events) and Lightbox modal with EXIF metadata",
+      "features": ["Category Filter Tabs", "Hover zoom & subtle overlay", "Fullscreen Lightbox with camera specs (Aperture, ISO, Focal Length, Camera)"]
+    },
+    "booking_request_flow": {
+      "component": "src/components/BookingForm.js",
+      "description": "Full interactive booking request form with category selection, date selection, details, and optional Stripe deposit flow ($100 deposit payment simulation)",
+      "fields": ["Full Name", "Email Address", "Phone Number", "Category & Package Select", "Preferred Date", "Location / Vision Notes", "Stripe Deposit Toggle"],
+      "action": "Submits payload to POST /api/bookings backend, saves to database, triggers email notification simulation, displays instant receipt modal with confirmation code"
+    },
+    "admin_dashboard": {
+      "component": "src/components/AdminBookings.js",
+      "description": "Protected admin dashboard to view, filter, and manage client booking requests, payment statuses, and trigger client notification emails",
+      "features": ["PIN/Password Gate (Default: admin123)", "Metrics summary cards", "Filterable table (All, Pending, Confirmed, Paid)", "Status change buttons (Approve, Mark Deposit Paid, Cancel)", "Export to CSV option"]
+    },
+    "footer": {
+      "component": "src/components/Footer.js",
+      "description": "Dark editorial luxury footer with large typographic branding 'LUMEN & FRAME', social links, location indicator, copyright notice"
+    }
+  },
+  "image_urls": {
+    "hero_portrait": "https://images.unsplash.com/photo-1634733049839-0292be607569?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwzfHxlZGl0b3JpYWwlMjBwb3J0cmFpdCUyMHBob3RvZ3JhcGh5JTIwZGFyayUyMG1vb2R5JTIwZHJhbWF0aWMlMjBhZXN0aGV0aWN8ZW58MHx8fHwxNzg4OTA0MzM2fDA&ixlib=rb-4.1.0&q=85",
+    "manifesto_portrait": "https://images.unsplash.com/photo-1508185140592-283327020902?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwyfHxlZGl0b3JpYWwlMjBwb3J0cmFpdCUyMHBob3RvZ3JhcGh5JTIwZGFyayUyMG1vb2R5JTIwZHJhbWF0aWMlMjBhZXN0aGV0aWN8ZW58MHx8fHwxNzg4OTA0MzM2fDA&ixlib=rb-4.1.0&q=85",
+    "portrait_editorial_2": "https://images.unsplash.com/photo-1517462964-21fdcec3f25b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHw0fHxlZGl0b3JpYWwlMjBwb3J0cmFpdCUyMHBob3RvZ3JhcGh5JTIwZGFyayUyMG1vb2R5JTIwZHJhbWF0aWMlMjBhZXN0aGV0aWN8ZW58MHx8fHwxNzg4OTA0MzM2fDA&ixlib=rb-4.1.0&q=85",
+    "portrait_editorial_3": "https://images.unsplash.com/photo-1568038479111-87bf80659645?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwxfHxlZGl0b3JpYWwlMjBwb3J0cmFpdCUyMHBob3RvZ3JhcGh5JTIwZGFyayUyMG1vb2R5JTIwZHJhbWF0aWMlMjBhZXN0aGV0aWN8ZW58MHx8fHwxNzg4OTA0MzM2fDA&ixlib=rb-4.1.0&q=85",
+    "family_1": "https://images.unsplash.com/photo-1658515036355-4a25a6311e1f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHw0fHxmYW1pbHklMjBwb3J0cmFpdCUyMHNlc3Npb24lMjBvdXRkb29yJTIwY2luZW1hdGljJTIwcGhvdG9ncmFwaHl8ZW58MHx8fHwxNzg4OTA0MzM2fDA&ixlib=rb-4.1.0&q=85",
+    "family_2": "https://images.unsplash.com/photo-1779497055954-7ad47ee23287?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwzfHxmYW1pbHklMjBwb3J0cmFpdCUyMHNlc3Npb24lMjBvdXRkb29yJTIwY2luZW1hdGljJTIwcGhvdG9ncmFwaHl8ZW58MHx8fHwxNzg4OTA0MzM2fDA&ixlib=rb-4.1.0&q=85",
+    "family_3": "https://images.unsplash.com/photo-1769614351494-5f7d3d6036bf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxmYW1pbHklMjBwb3J0cmFpdCUyMHNlc3Npb24lMjBvdXRkb29yJTIwY2luZW1hdGljJTIwcGhvdG9ncmFwaHl8ZW58MHx8fHwxNzg4OTA0MzM2fDA&ixlib=rb-4.1.0&q=85",
+    "family_4": "https://images.unsplash.com/photo-1772800391250-1f29de7848b8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHxmYW1pbHklMjBwb3J0cmFpdCUyMHNlc3Npb24lMjBvdXRkb29yJTIwY2luZW1hdGljJTIwcGhvdG9ncmFwaHl8ZW58MHx8fHwxNzg4OTA0MzM2fDA&ixlib=rb-4.1.0&q=85",
+    "sports_1": "https://images.unsplash.com/photo-1619376269004-7e287504b323?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwzfHxzcG9ydHMlMjBhdGhsZXRlJTIwYWN0aW9uJTIwZHJhbWF0aWMlMjBsaWdodGluZyUyMHBvcnRyYWl0JTIwcGhvdG9ncmFwaHl8ZW58MHx8fHwxNzg4OTA0MzM2fDA&ixlib=rb-4.1.0&q=85",
+    "sports_2": "https://images.unsplash.com/photo-1710736460914-4a7f22d736c4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwxfHxzcG9ydHMlMjBhdGhsZXRlJTIwYWN0aW9uJTIwZHJhbWF0aWMlMjBsaWdodGluZyUyMHBvcnRyYWl0JTIwcGhvdG9ncmFwaHl8ZW58MHx8fHwxNzg4OTA0MzM2fDA&ixlib=rb-4.1.0&q=85",
+    "sports_3": "https://images.unsplash.com/photo-1761258772175-24f047c9290d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwyfHxzcG9ydHMlMjBhdGhsZXRlJTIwYWN0aW9uJTIwZHJhbWF0aWMlMjBsaWdodGluZyUyMHBvcnRyYWl0JTIwcGhvdG9ncmFwaHl8ZW58MHx8fHwxNzg4OTA0MzM2fDA&ixlib=rb-4.1.0&q=85",
+    "sports_4": "https://images.unsplash.com/photo-1726195221775-e1d394a19f02?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHw0fHxzcG9ydHMlMjBhdGhsZXRlJTIwYWN0aW9uJTIwZHJhbWF0aWMlMjBsaWdodGluZyUyMHBvcnRyYWl0JTIwcGhvdG9ncmFwaHl8ZW58MHx8fHwxNzg4OTA0MzM2fDA&ixlib=rb-4.1.0&q=85",
+    "events_1": "https://images.unsplash.com/photo-1629751450989-c3aa81267f7a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w8NjA1NzB8MHwxfHNlYXJjaHwxfHx3ZWRkaW5nJTIwZW5nYWdlbWVudCUyMG1pbGVzdG9uZSUyMGV2ZW50JTIwY2VsZWJyYXRlJTIwcGhvdG9ncmFwaHl8ZW58MHx8fHwxNzg4OTA0MzM2fDA&ixlib=rb-4.1.0&q=85",
+    "events_2": "https://images.unsplash.com/photo-1647730346059-c7c75506451e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w8NjA1NzB8MHwxfHNlYXJjaHwyfHx3ZWRkaW5nJTIwZW5nYWdlbWVudCUyMG1pbGVzdG9uZSUyMGV2ZW50JTIwY2VsZWJyYXRlJTIwcGhvdG9ncmFwaHl8ZW58MHx8fHwxNzg4OTA0MzM2fDA&ixlib=rb-4.1.0&q=85",
+    "events_3": "https://images.unsplash.com/photo-1604700268022-d9018a9d7108?crop=entropy&cs=srgb&fm=jpg&ixid=M3w8NjA1NzB8MHwxfHNlYXJjaHwzfHx3ZWRkaW5nJTIwZW5nYWdlbWVudCUyMG1pbGVzdG9uZSUyMGV2ZW50JTIwY2VsZWJyYXRlJTIwcGhvdG9ncmFwaHl8ZW58MHx8fHwxNzg4OTA0MzM2fDA&ixlib=rb-4.1.0&q=85",
+    "events_4": "https://images.unsplash.com/photo-1625321482369-632c60583b60?crop=entropy&cs=srgb&fm=jpg&ixid=M3w8NjA1NzB8MHwxfHNlYXJjaHw0fHx3ZWRkaW5nJTIwZW5nYWdlbWVudCUyMG1pbGVzdG9uZSUyMGV2ZW50JTIwY2VsZWJyYXRlJTIwcGhvdG9ncmFwaHl8ZW58MHx8fHwxNzg4OTA0MzM2fDA&ixlib=rb-4.1.0&q=85"
+  },
+  "motion_and_interactions": {
+    "lenis_smooth_scroll": "Initialize lenis smooth momentum scrolling on top-level layout",
+    "hero_reveal": "Masked line reveal with Framer Motion variants: initial hidden y: 100%, animate to y: 0% with duration 1.2s easeOut",
+    "card_tilt": "3D parallax depth effect on hero image and featured gallery items",
+    "marquee": "Continuous smooth horizontal scroll via Framer Motion infinite loop x: ['0%', '-50%'] speed 35s",
+    "hover_states": "All buttons have explicit hover states (e.g., hover:bg-amber-400 hover:text-black hover:border-amber-400 transition-all duration-300)"
+  },
+  "data_testid_convention": {
+    "navbar": "data-testid=\"nav-link-{name}\" and data-testid=\"nav-book-button\"",
+    "hero": "data-testid=\"hero-heading\" and data-testid=\"hero-cta-button\"",
+    "manifesto": "data-testid=\"manifesto-chapter-{number}\"",
+    "pricing": "data-testid=\"package-card-{category}-{package_slug}\" and data-testid=\"book-package-btn-{package_slug}\"",
+    "gallery": "data-testid=\"gallery-filter-{category}\" and data-testid=\"gallery-item-{id}\"",
+    "booking_form": "data-testid=\"booking-form-input-{field_name}\" and data-testid=\"booking-form-submit-button\"",
+    "admin": "data-testid=\"admin-login-pin-input\", data-testid=\"admin-booking-row-{id}\", data-testid=\"admin-status-badge-{status}\""
+  },
+  "instructions_to_main_agent": [
+    "Ensure FastAPI backend at /backend endpoint includes endpoints POST /api/bookings, GET /api/bookings, PATCH /api/bookings/{id}/status, and notification triggers.",
+    "Implement Lenis smooth scrolling using @studio-freight/lenis or custom requestAnimationFrame Lenis script.",
+    "Use standard React .js syntax (not TypeScript .tsx).",
+    "Apply all images directly from the image_urls map above into portfolio galleries, service previews, and hero spotlights.",
+    "Ensure header/navbar has backdrop-blur-xl with dark background (never transparent) to satisfy readability rules.",
+    "Verify all interactive buttons, inputs, links, and cards include data-testid attributes."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": {
+    "anti_ai_slop": "Do not create basic white centered layout. Follow dark luxury editorial style with generous spacing (py-32), high contrast typography, fine hairline borders, and champagne gold accents.",
+    "no_universal_transition": "Never use transition: all. Use targeted CSS transitions like transition-colors duration-300 or transition-transform duration-500.",
+    "contrast_rule": "Maintain APCA contrast compliance. Set clear text colors on hover states (e.g. hover:text-black hover:bg-amber-400).",
+    "testing_attributes": "All key elements MUST include data-testid in kebab-case."
+  }
+}
+
